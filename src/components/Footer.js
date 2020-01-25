@@ -1,11 +1,11 @@
 import React from 'react'
 
-const MenuBar = () => {
+const Footer = () => {
   return (
     <div className="container">
-      <h1>Menu Bar</h1>
+      <h1>Footer</h1>
     </div>
   )
 }
 
-export default MenuBar
+export default Footer
