@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+header {
+  grid-column: span 3;
+  text-align: center;
+  //font-size: 1.4em;
+  background-color: $brand-color;
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}

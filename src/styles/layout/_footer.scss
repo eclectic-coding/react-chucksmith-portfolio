@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer {
+  grid-column: span 2;
+  //height: 20vh;
+  background-color: $light-grey;
+}
+
+.social {
+  margin-top: 1em;
+}
+
+ul.social-set {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Font Awesome icons */
+a.sociali {
+  font-size: 2em;
+  line-height: 1.2em;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px !important;
+
+}
+
+.twitter:hover {
+  color: #38A1F3;
+}
+
+.linkedin:hover {
+  color: #0077B5;
+}
+
+.github:hover {
+  color: #333;
+}
+

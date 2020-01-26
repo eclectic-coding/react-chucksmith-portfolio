@@ -1,0 +1,85 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Basic styles for links
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+main {
+  flex: 1;
+  padding: 1em;
+}
+
+aside {
+  padding: 1em;
+  //background-color: #936;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  @include md{
+    display: grid;
+    grid-template-columns: 17em 1fr;
+    grid-template-rows: auto 1fr;
+  }
+}
+
+.report-list {
+  list-style-type: none;
+}
+
+#q1, #q2, #q3 {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+#q1-results, #q2-results, #q3-results {
+  list-style-type: none;
+  font-weight: normal;
+}
+
+dl.inline-flex {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 200px;      /* set the container width*/
+  overflow: visible;
+}
+dl.inline-flex dt {
+  flex: 0 0 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+dl.inline-flex dd {
+  flex:0 0 50%;
+  margin-left: auto;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
