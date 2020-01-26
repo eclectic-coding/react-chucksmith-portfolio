@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
-import { Router } from '@reach/router';
+import React, {Component} from 'react'
+import {Router} from '@reach/router'
 import Home from './Home'
 import MenuBar from './MenuBar'
 import Footer from './Footer'
 import '../styles/main.scss'
-
 
 class App extends Component {
   render() {
@@ -21,5 +20,3 @@ class App extends Component {
 }
 
 export default App
-
-
