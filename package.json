@@ -41,10 +41,10 @@
     }
   },
   "lint-staged": {
-    "*.+{js,jsx}": [
-      "eslint --fix"
+    "src/**/*.{js,jsx}": [
+      "eslint . --fix"
     ],
-    "*.+{js,jsx,json}": [
+    "src/**/*.{js,jsx,json}": [
       "prettier --write"
     ]
   },
