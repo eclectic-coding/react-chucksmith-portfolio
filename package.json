@@ -20,9 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "lint:js": "eslint . --ext .js,.jsx",
-    "lint:js:fix": "npm run lint:js -- --fix"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
@@ -45,7 +43,7 @@
   "lint-staged": {
     "./src/**/*.{js,jsx}": [
       "npx prettier --write",
-      "eslint ./src/**/*.js --fix-dry-run"
+      "eslint src/**/*.js --fix-dry-run"
     ]
   },
   "browserslist": {
