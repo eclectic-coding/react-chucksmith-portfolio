@@ -10,6 +10,7 @@
     "react-scripts": "3.3.0"
   },
   "devDependencies": {
+    "@typescript-eslint/parser": "^2.17.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^4.2.1",
@@ -20,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "lint:js": "eslint . --ext .js,.jsx",
+    "lint:js:fix": "npm run lint:js -- --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -41,11 +43,9 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "eslint . --fix"
-    ],
-    "src/**/*.{js,jsx,json}": [
-      "prettier --write"
+    "./src/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "eslint src/*.js --fix-dry-run"
     ]
   },
   "browserslist": {

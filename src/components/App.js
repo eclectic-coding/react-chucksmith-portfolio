@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Router} from '@reach/router'
+import {Router} from '@reach/router'
 import Home from './Home'
 import MenuBar from './MenuBar'
 import Footer from './Footer'
