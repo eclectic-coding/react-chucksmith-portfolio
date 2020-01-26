@@ -30,7 +30,7 @@
   },
   "prettier": {
     "printWidth": 90,
-    "bracketSpacing": false,
+    "bracketSpacing": true,
     "trailingComma": "es5",
     "semi": false,
     "singleQuote": true
