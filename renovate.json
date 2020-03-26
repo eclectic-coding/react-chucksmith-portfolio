@@ -9,11 +9,13 @@
   "packageRules": [
     {
       "updateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
+      "automerge": true,
+      "automergeType": "branch"
     },
     {
       "depTypeList": ["devDependencies"],
-      "automerge": true
+      "automerge": true,
+      "automergeType": "branch"
     },
     {
       "packagePatterns": ["eslint"],
