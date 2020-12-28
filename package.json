@@ -10,7 +10,7 @@
     "react-scripts": "3.4.4"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "4.11.0",
+    "@typescript-eslint/parser": "4.11.1",
     "eslint-config-prettier": "7.1.0",
     "eslint-plugin-prettier": "3.3.0",
     "husky": "5.0.6",
